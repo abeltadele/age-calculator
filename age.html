@@ -1,34 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Age Calculator</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="age.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator | Discover Your Journey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="age.css">
 </head>
 <body>
-  <section>
     <div class="container">
-      <div>
-        <p class="agecal">Age Calculator</p> 
-      </div>
-      <div class="da">
-        <div>
-          <input type="date" id="inputValue">
+        <div class="header">
+            <h1 class="title">Age Calculator</h1>
+            <p class="subtitle">Discover your journey through time. Enter your birthdate to see your exact age in years, months, and days.</p>
         </div>
-        <div class="btn">
-          <button onclick="btnClick()" id="btn">Age Calculator</button>
+        
+        <div class="content">
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="birthdate"><i class="fas fa-calendar-alt"></i> Your Birthdate</label>
+                    <input type="date" id="birthdate" class="input-field" max="">
+                </div>
+                
+                <div class="input-group">
+                    <label for="target-date"><i class="fas fa-bullseye"></i> Calculate Until (Optional)</label>
+                    <input type="date" id="target-date" class="input-field">
+                </div>
+                
+                <button id="calculate-btn" class="calculate-btn">
+                    <i class="fas fa-calculator"></i> Calculate My Age
+                </button>
+                
+                <div class="animation-area">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+            
+            <div class="result-section">
+                <div class="result-container">
+                    <h2 class="result-title">Your Journey Through Time</h2>
+                    <div class="age-result">--</div>
+                    <p style="color: rgba(255, 255, 255, 0.9); margin-top: 10px;">years young!</p>
+                    
+                    <div class="result-details">
+                        <div class="detail-box">
+                            <div class="detail-value" id="months">--</div>
+                            <div class="detail-label">Months</div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="detail-value" id="days">--</div>
+                            <div class="detail-label">Days</div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="detail-value" id="hours">--</div>
+                            <div class="detail-label">Hours</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="ageday">
-        <div  id="dayOutput"> </div>
-        <div class="age" id="age"></div>
-       </div>
-      </div>
+        
+        <div class="footer">
+            <p>Made with <span class="heart">❤</span> | Your journey through time matters</p>
+        </div>
     </div>
-  </section>
-  <script src="age.js"></script>
+    <script src="age.js"></script>
 </body>
 </html>
