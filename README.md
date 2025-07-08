@@ -6,7 +6,7 @@ Instant Age Calculation: Enter your date of birth and get your age instantly.
 Detailed Breakdown: Displays age in years, months, and days.
 Responsive Design: Optimized for desktop and mobile devices.
 Clean & Intuitive UI: Minimalistic design for ease of use.
-Demo
+Demo(http://age_calculator.io/)
 Screenshot of Age Calculator
 (Include a screenshot of your app here for better visualization.)
 
